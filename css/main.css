@@ -1,0 +1,195 @@
+:root {
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 2rem;
+    --space-4: 4rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.5rem;
+    --font-size-lg: 2.5rem; /* Updated font size for h2 */
+    --font-size-xl: 3rem;
+    --primary-color: #556;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --btn-bg: rgb(0, 255, 179);
+    --btn-color: #333;
+    --max-width: 1200px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-2);
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: var(--space-2) 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: var(--font-size-xl);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--space-1);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('../images/hero-3.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: var(--space-2); 
+    min-height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about,
+.services,
+.testimonials,
+.contact {
+    background: var(--secondary-color);
+    text-align: center;
+    padding: var(--space-3) 0;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+}
+
+.feature {
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); 
+    box-sizing: border-box;
+    max-width: 200px; 
+}
+
+.feature img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100px; 
+    margin-bottom: 10px; 
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .feature {
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+    .feature img {
+        max-width: 80px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .feature {
+        flex: 1 1 100%; 
+    }
+
+    .feature img {
+        max-width: 60px; 
+    }
+}
+
+.services .btn,
+.contact-form button {
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    padding: var(--space-1) var(--space-2);
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.testimonial {
+    margin-bottom: var(--space-2);
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.contact-info,
+.contact-form {
+    width: 100%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: var(--space-1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: var(--space-2) 0;
+}
+
+/* Responsive typography */
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: var(--font-size-lg);
+}
+
+h3 {
+    font-size: var(--font-size-md);
+}
+
+p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-2);
+}
