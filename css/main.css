@@ -6,7 +6,7 @@
     --font-size-base: 1rem;
     --font-size-md: 1.5rem;
     --font-size-lg: 2.5rem;
-    --font-size-xl: 3rem;
+    --font-size-xl: 3.5rem;
     --primary-color: #3A5F7D; /* Mountain Blue */
     --secondary-color: #C0C0C0; /* Silver */
     --accent-color: #2E8B57; /* Forest Green */
@@ -38,7 +38,7 @@ body {
     padding: 0 var(--space-2);
 }
 
-
+/* Header */
 header {
     background: var(--primary-color);
     color: var(--neutral-color);
@@ -54,6 +54,13 @@ header {
 header h1 {
     margin: 0;
     font-size: var(--font-size-xl);
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+    max-height: 100px;
+
 }
 
 nav ul {

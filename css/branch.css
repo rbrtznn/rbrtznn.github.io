@@ -1,0 +1,40 @@
+:root {
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 2rem;
+    --space-4: 4rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.5rem;
+    --font-size-lg: 2.5rem;
+    --font-size-xl: 3rem;
+    --primary-color: #3A5F7D; /* Mountain Blue */
+    --secondary-color: #C0C0C0; /* Silver */
+    --accent-color: #2E8B57; /* Forest Green */
+    --neutral-color: #FFFFFF; /* White */
+    --text-color: #3A5F7D; /* Mountain Blue for text */
+    --btn-bg: #2E8B57;
+    --btn-bg-hover: #297c4e;
+    --btn-color: #FFFFFF; /* White */
+    --max-width: 1200px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-2);
+}
+
