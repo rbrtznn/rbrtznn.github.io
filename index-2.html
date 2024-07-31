@@ -5,34 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your go-to real estate business">
     <title>Zenon Media | Real Estate Listing Media</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/branch.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
 </head>
 <body>
-    <header>
-        <div class="wrapper header-content">
-	    <!--<h1>Zenon Media</h1>-->
-	    <a href="index.html">
-                <img src="images/logo/logo-transparent-white-500x300.svg" alt="Zenon Media Logo" class="logo">
+    <div class="stack">
+        <header class="box header-content">
+	        <!--<h1>Zenon Media</h1>-->
+	        <a href="index.html" class="box switcher">
+                <img src="images/logo/logo-white-transparentbkg-500x150.svg" alt="Zenon Media Logo" class="logo">
             </a>	
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="listingMedia.html">Pricing</a></li>
-                    <li><a href="training.html">Client Center Training</a></li>
-                    <li><a href="https://book.zenonmedia.co/order/zenon/order">Book Now</a></li>
+            <nav class="box switcher">
+                <ul class="box switcher">
+                    <li class="box"><a href="index.html">Home</a></li>
+                    <li class="box"><a href="about.html">About</a></li>
+                    <li class="box"><a href="listingMedia.html">Pricing</a></li>
+                    <li class="box"><a href="training.html">Client Center Training</a></li>
+                    <li class="box"><a href="https://book.zenonmedia.co/order/zenon/order">Book Now</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="wrapper hero-content">
+        </header>
+        <main>
+            <section class="hero">
+                <div class="wrapper hero-content">
                 <h2>Listing Media For Agents in Western NC</h2>
             </div>
         </section>
-
         <section class="about">
             <div class="wrapper">
                 <h2>We Exist To Serve You, <span class="highlight">The Agent</span></h2>
@@ -57,27 +55,25 @@
                 </div>
             </div>
         </section>
-
         <section class="services">
-            <div class="wrapper services-content">
+            <div class="wrapper">
                 <h2>How We Serve You</h2>
-                <div class="service-columns">
-                    <div class="services-text">
+                <div class="service-content"> <!-- Fixed class name from "service-conent" to "service-content" -->
+                    <div class="text">
                         <h3>Photos, Drone Services, and Marketing Content</h3>
-                        <p>Zenon Media is on its way to becoming a full service real estate media company! We currently provide photos, drone photos, and marketing content to help you market your listings!</p>
+                        <p>Zenon Media is on its way to becoming a full service real estate media company! We currently provide photos, drone photos, and marketing content to help you market your listings!</p> <!-- Fixed typos -->
                         <a href="listingMedia.html" class="btn">View Listing Media</a>
                     </div>
-                    <div class="services-image">
-                        <img src="images/listing-media.png" alt="Listing Media">
+                    <div class="image">
+                        <img src="images/listing-media.png" alt="Listing Media"> <!-- Ensure this path is correct -->
                     </div>
-                </div>
+                </div>    
             </div>
         </section>
-
         <section class="testimonials">
             <div class="wrapper">
                 <h2>What Our Clients Have Said</h2>
-		        <div class="testimonial-container">
+		<div class="testimonial-container">
                     <div class="testimonial">
                         <p>"I have used Robert with Zenon Media multiple times on my listings for Real Estate photography. He is always on time for the appointment, pays attention to detail, and produces great quality photos. Prices are reasonable. I won't hesitate to use him in the future!"</p>
                         <p>Bobbie McMahan || Realtor</p>
@@ -89,7 +85,7 @@
                     <div class="testimonial">
                         <p>"Highly recommend!"</p>
                         <p>- Zeke Dorr | Realtor</p>
-		            </div>-->
+		    </div>-->
                 </div>    
             </div>
         </section>
@@ -97,7 +93,7 @@
         <section class="contact">
             <div class="wrapper contact-content">
                 <h2>Contact Us</h2>
-		        <div class="contact-columns">
+		<div class="contact-columns">
                     <div class="contact-info">
                         <h3>Let's Discuss Your Next Project</h3>
                         <p>Get in touch with us, and we'd love to discuss your next real estate media project! From listing media, to marketing content &amp; lead generation we have you covered!</p>
@@ -110,7 +106,7 @@
                         <p>We'd love to discuss! Complete the form below and we'll get back to you ASAP.</p>
                         <a href="https://formsubmit.co/el/xonoce" target="_blank" class="btn">Tell Us How We Can Help</a>
                     </div>
-		        </div>
+		</div>
             </div>
         </section>
     </main>
@@ -122,6 +118,7 @@
             </a>
         </div>
     </footer>
+    </div>  
     <script src="js/main.js"></script> <!-- Ensure this path is correct -->
 </body>
 </html>

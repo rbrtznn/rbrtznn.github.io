@@ -12,7 +12,7 @@
     --accent-color: #2E8B57; /* Forest Green */
     --neutral-color: #FFFFFF; /* White */
     --text-color: #3A5F7D; /* Mountain Blue for text */
-    --btn-bg: #2E8B57;
+    --btn-bg: var(--accent-color);
     --btn-bg-hover: #297c4e; 
     --btn-color: #FFFFFF; /* White */
     --max-width: 1200px;
@@ -57,7 +57,7 @@ header h1 {
 }
 
 .logo {
-    width: 250px;
+    width: 150px;
     height: auto;
 }
 
@@ -76,6 +76,9 @@ nav ul li a:hover {
     color: var(--secondary-color);
 }
 
+header, .hero {
+
+}
 
 .hero {
     background: url('../images/hero-04.png') no-repeat center center/cover; /* Ensure this path is correct */
@@ -125,52 +128,51 @@ nav ul li a:hover {
 }
 
 
+/* Services Section */
 .services {
     background: var(--primary-color);
-    color: var(--neutral-color);    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    color: var(--neutral-color);
     padding: var(--space-3) 0;
 }
 
-.service-content {
+.services-content {
+    text-align: center;
+}
+
+.service-columns {
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 20px;
+    align-items: center; /* Center items vertically */
+    gap: var(--space-3); /* Space between columns */
 }
 
-.service-content .text {
+.services-text, .services-image {
     flex: 1;
-    padding: 20px;
+    padding: var(--space-2);
+    background-color: var(--primary-color);
+    border-radius: 8px;
 }
 
-.service-content .image {
-    flex: 1;
-    padding: 20px;
-}
-
-.service-content .image img {
+.services-image img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
-/* Media query to stack items in a column when viewport height is too small */
-@media (max-height: 600px) {
-    .service-content {
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .service-columns {
         flex-direction: column;
+        align-items: center;
     }
 
-    .service-content .text,
-    .service-content .image {
+    .services-text, .services-image {
         max-width: 100%;
-        padding: 10px;
+        padding: var(--space-1);
     }
 }
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
@@ -324,14 +326,13 @@ nav ul li a:hover {
     flex: 1;
     padding: var(--space-2);
     background-color: var(--primary-color); /* Optional: Adding a background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a box shadow */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a box shadow */
     border-radius: 8px; /* Optional: Adding rounded corners */
 }
 
 
 .contact-info h3, .contact-form h3 {
-    margin: var(--space-3);:w
-
+    margin: var(--space-3);
 }
 
 .contact-info p, h4{
@@ -366,7 +367,7 @@ nav ul li a:hover {
     color: var(--btn-color);
 }
 
-/* Responsive styling */
+/* Contact Responsive styling */
 @media (max-width: 768px) {
     .contact-columns {
         flex-direction: column;

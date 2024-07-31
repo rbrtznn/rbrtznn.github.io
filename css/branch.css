@@ -1,40 +1,296 @@
-:root {
-    --space-1: 0.5rem;
-    --space-2: 1rem;
-    --space-3: 2rem;
-    --space-4: 4rem;
-    --font-size-base: 1rem;
-    --font-size-md: 1.5rem;
-    --font-size-lg: 2.5rem;
-    --font-size-xl: 3rem;
-    --primary-color: #3A5F7D; /* Mountain Blue */
-    --secondary-color: #C0C0C0; /* Silver */
-    --accent-color: #2E8B57; /* Forest Green */
-    --neutral-color: #FFFFFF; /* White */
-    --text-color: #3A5F7D; /* Mountain Blue for text */
-    --btn-bg: #2E8B57;
-    --btn-bg-hover: #297c4e;
-    --btn-color: #FFFFFF; /* White */
-    --max-width: 1200px;
-}
+/* Global Styles */
 
+/* Reset and Universal Box-Sizing */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Typography */
+:root {
+  --font-size-base: 1rem;
+  --font-size-large: 1.25rem;
+  --font-size-xlarge: 1.5rem;
+  --line-height-base: 1.5;
+  --font-family-sans: 'Helvetica Neue', Arial, sans-serif;
+
+  /* Modular Scale */
+  --ratio: 1.5;
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+
+  /* Colors */
+  --color-primary: #3a5f7d;
+  --color-secondary: #2e8b57;
+  --color-light: #FFFFFF;
+  --color-dark: #3a5f7d;
+
+  /* Measure */
+  --measure: 60ch;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }
 
-.wrapper {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 var(--space-2);
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: calc(var(--s0) / 2);
 }
 
+p {
+  margin-bottom: var(--s1);
+  max-inline-size: var(--measure);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout Primitives */
+
+/* Stack Layout */
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-block: 0;
+} 
+
+.stack > * + * {
+  margin-block-start: var(--s1);
+}
+
+/* Box Layout */
+.box {
+  padding: var(--s1);
+  border: 1px solid var(--color-secondary);
+  border-radius: 4px;
+}
+
+.box * {
+    color: inherit;
+}
+  
+.box.invert {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+/* Center Layout */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  max-inline-size: var(--measure);
+  margin-inline: auto;
+  padding: var(--s1);
+}
+
+/* Cluster Layout */
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1);
+  justify-content: space-between;
+}
+
+/* Switcher Layout */
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1);
+}
+
+.switcher > * {
+  flex: 1 1 calc(var(--measure) / 2);
+}
+
+.switcher > *:nth-last-child(n+2) {
+  flex-basis: 100%;
+}
+
+/* Cover Layout */
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--s2);
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-align: center;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+  gap: var(--s1);
+}
+
+/* Frame Layout */
+.frame {
+  border: 1px solid var(--color-dark);
+  padding: var(--s1);
+  aspect-ratio: 16 / 9;
+}
+
+/* Imposter Layout */
+.imposter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-inline-size: var(--measure);
+  padding: var(--s1);
+  background-color: var(--color-light);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Icon Layout */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--s1);
+  height: var(--s1);
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  font-size: var(--font-size-large);
+}
+
+/* Container Layout */
+.container {
+  width: 100%;
+  max-inline-size: var(--measure);
+  padding-inline: var(--s1);
+  margin-inline: auto;
+}
+
+/* Reel Layout */
+.reel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: var(--s1);
+}
+
+.reel > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* Sidebar Layout */
+.sidebar {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.sidebar > .sidebar-content {
+  flex: 1;
+}
+
+.sidebar > .sidebar-aside {
+  flex: 0 0 auto;
+  width: 300px; /* or any fixed width */
+  margin-left: var(--s1);
+}
+
+/* Utility Classes */
+.u-align-center {
+  text-align: center;
+}
+
+.u-margin-auto {
+  margin: auto;
+}
+
+.u-padding {
+  padding: var(--s1);
+}
+
+/* Example Component Styles */
+
+/* Button */
+.button {
+  display: inline-block;
+  padding: var(--s0) var(--s1);
+  font-size: var(--font-size-base);
+  font-weight: bold;
+  color: var(--color-light);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darken(var(--color-primary), 10%);
+}
+
+/* Cards */
+.card {
+  background-color: var(--color-light);
+  border: 1px solid var(--color-secondary);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: var(--s0);
+}
+
+.card-body {
+  padding: var(--s1);
+}
+
+.card-footer {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  padding: var(--s0);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  :root {
+    --font-size-base: 0.875rem;
+    --s1: calc(var(--s0) * var(--ratio));
+  }
+
+  .switcher > * {
+    flex-basis: 100%;
+  }
+  
+  .sidebar > .sidebar-aside {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-top: var(--s1);
+  }
+}
