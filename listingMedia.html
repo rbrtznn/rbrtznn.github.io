@@ -6,17 +6,16 @@
     <meta name="description" content="Your go-to real estate business">
     <title>Zenon Media | Real Estate Listing Media</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="wrapper header-content">
-	    <!--<h1>Zenon Media</h1>-->
-	    <a href="index.html">
-                <img src="images/logo/logo-white-transparentbkg-500x150.svg" alt="Zenon Media Logo" class="logo">
-            </a>	
-            <nav>
-                <ul>
+        <div class="container with-sidebar header-content">
+            <a href="index.html" class="sidebar center">
+                <img src="images/logo/logo-transparent-white-500x300.svg" alt="Zenon Media Logo" class="logo">
+            </a>
+            <nav class="not-sidebar">
+                <ul class="switcher">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="listingMedia.html">Pricing</a></li>
@@ -26,78 +25,86 @@
             </nav>
         </div>
     </header>
+
+
     <main>
         <section class="hero">
-            <div class="wrapper hero-content">
+            <div class="container cover hero-content">
                 <h2>Listing Media For Agents in Western NC</h2>
             </div>
         </section>
-      
-	<section class="packages">
-            <div class="wrapperi packkages-content">
+
+        <section class="packages">
+            <div class="container stack packages-content">
                 <h2>Packages</h2>
-		<h3>Base | Standard | Plus</h3>
-		<div class="packages-columns">
-                    <div class="package">
-                        <h3>Base Media Package</h3>
-                        <!-- <p>Our Base Package includes 25 Interior and Exterior photos, 6 drone photos, as well as a Schematic Floor Plan with room measurements. This package is best suited for smaller listings or rental properties!</p> -->
-                        <p>Includes 24 Interior and Exterior photos, 6 drone photos, a property website, and marketing content. This package is best suited for smaller listings or rental properties!Best suited for smaller listings or rental properties.</p>
-                        <p><strong>$299 + Tax</strong></p>
+                <div class="switcher packages-columns">
+                    <div class="box stack package">
+                        <h3>Base Package</h3>
+                        <p>Includes 24 Interior and Exterior photos, 6 drone photos, a property website, and marketing content.</p>
+                        <p>This package is best suited for smaller listings or rental properties!</p>
+                        <p class="price"><strong>$299 + Tax</strong></p>
                     </div>
-                    <div class="package">
-                        <h3>Standard Media Package</h3>
-                        <!-- <p>Our Pro Package includes 40 Interior and Exterior Photos, a Schematic Floor Plan with room measurements along with a 3D version , Drone Photos, and a Marketing Kit! This is our most popular package and is designed for most standard listings!</p> -->
-                        <p>Includes 36 Interior and Exterior photos, 6 drone photos, a property website, and marketing content. This is our most popular package and is designed for most standard listings!</p>
-                        <p><strong>$359 + Tax</strong></p>
+                    <div class="box stack package">
+                        <h3>Standard Package</h3>
+                        <p>Includes 36 Interior and Exterior photos, 6 drone photos, a property website, and marketing content.</p>
+                        <p>This is our most popular package and is designed for most standard listings!</p>
+                        <p class="price"><strong>$359 + Tax</strong></p>
                     </div>
-                    <div class="package">
-                        <h3>Deluxe Media Package</h3>
-                        <!-- <p>Our Plus Package includes 40 Interior and Exterior Photos, a 60 Second Cinematic Video, a Matterport 3D Tour, Drone Photos, 2 Virtual Twilight Photos, a Schematic Floor Plan along with a 3D version, and a Marketing Kit! If you have a listing you want to pull out all the stops on, the plus package is designed to do just that!</p> -->
-                        <p>Includes 24 Interior and Exterior photos, 6 drone photos, a property website, and marketing content. If you have a listing that needs a little more, the deluxe package is designed to do just that!</p>
-                        <p><strong>$429 + Tax</strong></p>
+                    <div class="box stack package">
+                        <h3>Plus Package</h3>
+                        <p>Includes 48 Interior and Exterior photos, 6 drone photos, a property website, and marketing content.</p>
+                        <p>If you have a larger property that you want to really highlight the details on, the plus package is designed to do just that!</p>
+                        <p class="price"><strong>$429 + Tax</strong></p>
                     </div>
                 </div>
-	    </div>
+            </div>
         </section>
+
         <section class="a-la-carte">
-            <div class="wrapper">
+            <div class="container stack">
                 <h2>A La Carte Services</h2>
-                <div class="service">
+                <div class="service stack">
                     <h3>Hand Blended Images</h3>
-                    <p>We offer simple flat rate pricing for our real estate images. <strong>For our 24 photos a we charge $995 plus tax, and for 36 photos we charge $249 plus tax. </strong>No hidden fees, square footage or travel charges within our service area.</p>
+                    <p>For 24 photos, we charge $195 plus tax, and for 36 photos, we charge $249 plus tax. No hidden fees, square footage, or travel charges within our service area.</p>
                 </div>
-                <div class="service">
+                <div class="grid">
+                    <img src="images/examples/exterior-03.jpg" alt="Hand Blended Image 1">
+                    <img src="images/examples/interior-20.jpg" alt="Hand Blended Image 2">
+                    <img src="images/examples/interior-11.jpg" alt="Hand Blended Image 3">
+	        </div>
+		<div class="grid">
+		    <img src="images/examples/interior-19.jpg" alt="Hand Blended Image 4">
+                    <img src="images/examples/interior-35.jpg" alt="Hand Blended Image 5">
+                    <img src="images/examples/exterior-04.jpg" alt="Hand Blended Image 6">
+                </div>
+                <div class="service stack">
                     <h3>Drone Photos</h3>
-                    <p><strong>We charge just $125 for our 6 drone photo package. </strong>Our photographers are FAA Part 107 Certified so you can rest easily knowing you will not only get high quality drone photos, but also legal drone photos!</p>
+                    <p>We charge just $125 for our 6 drone photo package. Our photographers are FAA Part 107 Certified so you can rest easily knowing you will not only get high quality drone photos, but also legal drone photos!</p>
                 </div>
-                <!-- <div class="service">
-                    <h3>Twilight & Virtual Twilight Photos</h3>
-                    <p>Standard twilight photos (taken at dusk) and virtual twilight photos (daylight photos edited to resemble dusk). 4 virtual twilight photos for $95 and 4 standard twilight photos for $195.</p>
-                </div> -->
-                <div class="service">
+                <div class="grid">
+                    <img src="images/examples/drone-26.jpg" alt="Hand Blended Image 1">
+                    <img src="images/examples/drone-27.jpg" alt="Hand Blended Image 2">
+                    <img src="images/examples/drone-39.jpg" alt="Hand Blended Image 3">
+                </div>
+                <div class="service stack">
                     <h3>Virtual Twilight Photos</h3>
-                    <p>These are daylight photos edited to resemble dusk. <strong>Our virtual twilight photo package is $115 for 4 photos.</strong></p>
+                    <p> We offer virtual twilight photos (daylight photos edited to resemble dusk photos). Our virtual twilight photo package is $115 for 4 photos.</p>
                 </div>
-                <!-- <div class="service">
-                    <h3>Videos</h3>
-                    <p>60 second videos with standard and drone footage. Great for social media. Also offer vertical videos for Instagram & FB reels.</p>
-                    <p><strong>$250 for standard video, $125 for vertical video</strong></p>
-                </div> -->
-                <!-- <div class="service">
-                    <h3>3D Tours</h3>
-                    <p>Provide an immersive experience for buyers. Great for marketing and winning more listings.</p>
-                    <p><strong>Starting at $165</strong></p>
-                </div> -->
+                <div class="grid">
+                    <img src="images/examples/exterior-03.jpg" alt="Hand Blended Image 1">
+                    <img src="images/examples/exterior-01.JPG" alt="Hand Blended Image 2">
+                    <img src="images/examples/exterior-04.jpg" alt="Hand Blended Image 3">
             </div>
         </section>
     </main>
+
     <footer>
-    <div class="wrapper footer-content">
-        <p>&copy; 2024 Zenon Media LLC</p>
-        <a href="https://www.instagram.com/yourusername" target="_blank" class="social-icon">
-            <i class="fab fa-instagram"></i>
-        </a>
-    </div>
+        <div class="container footer-content">
+            <p>&copy; 2024 Zenon Media LLC</p>
+            <a href="https://www.instagram.com/zenonmedia.wnc" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
