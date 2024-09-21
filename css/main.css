@@ -322,7 +322,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: var(--s1);
-  justify-content: space-between;
   align-items: center;
   padding-block: var(--s1);
 }
@@ -330,6 +329,10 @@ header {
 .logo {
   max-inline-size: 150px;
   block-size: auto;
+}
+
+nav {
+    margin-left: auto;
 }
 
 nav ul {

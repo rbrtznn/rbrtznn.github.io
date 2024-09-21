@@ -36,11 +36,11 @@
 
         <section id="about">
             <div class="container stack center">
-                <h2>We love Real Estate Media and we love working with YOU!</h2>
+                <h2>We love Real Estate Media and we love working with YOU to help increase the marketability of your listings and help you sell faster.</h2>
                 <div class="team-member stack center">
                     <img src="images/team-member1.jpg" alt="Team Member 1">
-                     <h3>I'm not a realtor, but I started this company to be one that I would want to use if I was. I think that every property has a story to tell, and we're committed to helping you tell it.</h3>
-                    <!-- <p>Robert Zenon || Owner</p> -->
+                    <h3>Robert is the owner and operator of Zenon Media. He believes that every property has a story to tell, and is committed to helping you share it with the world.</h3>
+                    <!-- <p>Owner</p> -->
                 </div>
                 <!-- Add more team members as needed -->
             </div>
