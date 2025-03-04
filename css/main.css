@@ -352,7 +352,7 @@ nav ul li a {
     color: var(--neutral-color);
     text-decoration: none;
     font-weight: bold;
-    padding: 5px, 10px;
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
