@@ -353,10 +353,21 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
+    white-space: nowrap; /* Keeps text on one line */
 }
 
 nav ul li a:hover {
     color: var(--secondary-color);
+}
+
+/* New styles to align nav items to the side */
+header nav .switcher {
+    justify-content: flex-end;
+    gap: var(--s1);
+}
+
+header nav .switcher > li {
+    flex-grow: 0;
 }
 
 /* Hero Section */
