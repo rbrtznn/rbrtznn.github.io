@@ -98,7 +98,7 @@
         <section class="contact">
             <div class="container stack contact-content">
                 <h2>Contact Us</h2>
-		<div class="switcher">
+		        <div class="switcher">
                     <div class="contact-info stack">
                         <h3>Let's Discuss Your Next Project</h3>
                         <p>Get in touch with us, and we'd love to discuss your next real estate media project! From listing media, to marketing content &amp; lead generation we have you covered!</p>
@@ -107,33 +107,33 @@
                         <p>Phone: (828) 222-3262</p>
                     </div>
                     <div class="contact-form stack">
-  <h3>How Can We Help?</h3>
-  <p>We'd love to discuss! Complete the form below and we'll get back to you ASAP.<p>
-  <form action="https://formsubmit.co/book@mineralcitymedia.com" method="POST">
-    
-    <!-- Anti-spam field -->
-    <input type="text" name="_honey" style="display:none">
-
-    <!-- Disable CAPTCHA -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <!-- Custom Redirect after submission -->
-    <input type="hidden" name="_next" value="https://mineralcitymedia.com/thank-you.html">
-
-    <div class="form-group stack">
-      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-    </div>
-
-    <div class="form-group stack">
-      <textarea placeholder="Your Message" class="form-control" name="message" rows="8" required></textarea>
-    </div>
-
-    <button type="submit" class="btn">Send Message</button>
-  </form>
-</div>
-
-		</div>
+                        <h3>How Can We Help?</h3>
+                        <p>We'd love to discuss! Complete the form below and we'll get back to you ASAP.</p>
+                      
+                        <form action="https://formsubmit.co/book@mineralcitymedia.com" method="POST" class="stack">
+                          
+                          <!-- Anti-spam Honeypot -->
+                          <input type="text" name="_honey" style="display:none">
+                          
+                          <!-- Disable CAPTCHA -->
+                          <input type="hidden" name="_captcha" value="false">
+                          
+                          <!-- Custom Redirect -->
+                          <input type="hidden" name="_next" value="https://mineralcitymedia.com/thank-you.html">
+                      
+                          <!-- Form Fields -->
+                          <div class="form-row">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                          </div>
+                      
+                          <textarea name="message" placeholder="Your Message" rows="8" required></textarea>
+                      
+                          <p><button type="submit" class="btn">Send Message</button></p>
+                      
+                        </form>
+                    </div>  
+		        </div>
             </div>
         </section>
     </main>
