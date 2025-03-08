@@ -218,7 +218,7 @@ p { font-size: var(--font-size-base); }
     flex-wrap: wrap;
     gap: var(--s-1);
     align-items: flex-start;
-    justify: space-between;
+    justify-content: space-between;
 }
 
 .switcher > * {
