@@ -552,3 +552,19 @@ footer {
         font-size: calc(var(--font-size-base) * 1.25);
     }
 }
+
+/* Custom Responsive Reordering for Contact Sections */
+@media (max-width: 768px) {
+    .switcher {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        order: 2; /* "Let's Discuss Your Next Project" appears second */
+    }
+
+    .contact-form {
+        order: 1; /* "How Can We Help?" appears first */
+    }
+}
