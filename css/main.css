@@ -568,3 +568,25 @@ footer {
         order: 1; /* "How Can We Help?" appears first */
     }
 }
+
+/* Fix alignment issues on small screens */
+@media (max-width: 768px) {
+    .switcher {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--s0);
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
