@@ -575,3 +575,18 @@ footer {
         text-align: center;
     }
 }
+
+/* Additional form styling for consistency */
+.form-control {
+    padding: var(--s-1);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: var(--font-size-base);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+}
+
