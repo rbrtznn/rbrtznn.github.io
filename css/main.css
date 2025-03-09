@@ -315,7 +315,7 @@ p { font-size: var(--font-size-base); }
 header {
     background: var(--primary-color);
     color: var(--neutral-color);
-    padding: var(--s0) 0;
+    padding: var(--s-5) 0;
 }
 
 .header-content {
@@ -327,8 +327,8 @@ header {
 }
 
 .logo {
-  max-inline-size: 150px;
-  block-size: auto;
+  max-inline-size: 200px;
+  height: auto;
 }
 
 nav {
