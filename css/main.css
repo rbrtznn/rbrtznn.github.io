@@ -576,34 +576,6 @@ footer {
     }
 }
 
-/* Additional form styling for consistency */
-.form-control {
-    padding: var(--s-1);
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    font-size: var(--font-size-base);
-}
-
-.form-control:focus {
-    outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 5px var(--secondary-color);
-}
-
-/* Form styling to match your site theme */
-.contact-form input,
-.contact-form textarea {
-  padding: var(--s-1);
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
-  font-size: var(--font-size-base);
-  width: 100%;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
 .contact-form button.btn {
   background-color: var(--btn-bg);
   color: var(--btn-color);
